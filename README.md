@@ -8,7 +8,7 @@ $ git config --global user.name "Your Name"
 
 $ git init "namefile"
 
-$ cd "namefile"
+$ cd "namefolder"
 
 $ git clone git://github.com/schacon/ticgit.git
 
@@ -28,4 +28,11 @@ $ git remote -v
 
 origin  git://github.com/schacon/ticgit.git (fetch)
 origin  git://github.com/schacon/ticgit.git (push)
+
+$ git add "namefile"
+
+$ git commit -m "namefile"
+
+$ git push origin master
+
 
