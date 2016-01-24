@@ -2,32 +2,38 @@
 
 Run
 
-$ git config --global user.email "you@example.com"
+$ git config --global user.email rayvalero177
 
-$ git config --global user.name "Your Name"
+$ git config --global user.name RayValero
 
-$ git init "namefile"
+$ git init ray
 
-$ cd "namefolder"
+$ cd ray
 
-$ git clone git://github.com/schacon/ticgit.git
+$ cd ..
 
-Initialized empty Git repository in /private/tmp/ticgit/.git/
-remote: Counting objects: 595, done.
-remote: Compressing objects: 100% (269/269), done.
-remote: Total 595 (delta 255), reused 589 (delta 253)
-Receiving objects: 100% (595/595), 73.31 KiB | 1 KiB/s, done.
-Resolving deltas: 100% (255/255), done.
+$ git clone https://github.com/ULAnux/mathematica
 
-$ cd ticgit
+Cloning into 'mathematica'...
+remote: Counting objects: 46, done.
+remote: Compressing objects: 100% (41/41), done.
+remote: Total 46 (delta 4), reused 46 (delta 4), pack-reused 0
+Unpacking objects: 100% (46/46), done.
+Checking connectivity... done.
+
+
+$ cd mathematica
+
 $ git remote
 
 origin
 
 $ git remote -v
 
-origin  git://github.com/schacon/ticgit.git (fetch)
-origin  git://github.com/schacon/ticgit.git (push)
+origin  https://github.com/ULAnux/mathematica (fetch)
+origin  https://github.com/ULAnux/mathematica (push)
+
+
 
 $ git add "namefile"
 
