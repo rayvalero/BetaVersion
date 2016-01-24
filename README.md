@@ -33,12 +33,31 @@ $ git remote -v
 origin  https://github.com/ULAnux/mathematica (fetch)
 origin  https://github.com/ULAnux/mathematica (push)
 
+$ git clone https://github.com/rayvalero/BetaVersion
 
+Cloning into 'BetaVersion'...
+remote: Counting objects: 14, done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 14 (delta 1), reused 2 (delta 0), pack-reused 0
+Unpacking objects: 100% (14/14), done.
+Checking connectivity... done.
 
-$ git add "namefile"
+$ cd BetaVersion/
 
-$ git commit -m "namefile"
+$ git add README2.md
+
+$ git commit -m README2.md
 
 $ git push origin master
+
+Counting objects: 2, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 270 bytes | 0 bytes/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/rayvalero/BetaVersion
+7ebcb51..ba658da  master -> master
+
+
 
 
