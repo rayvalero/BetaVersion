@@ -58,6 +58,16 @@ Total 2 (delta 0), reused 0 (delta 0)
 To https://github.com/rayvalero/BetaVersion
 7ebcb51..ba658da  master -> master
 
+$ git fetch origin
+
+remote: Counting objects: 3, done.
+
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/rayvalero/BetaVersion
+   ba658da..d684ae7  master     -> origin/master
+
 
 
 
