@@ -3,12 +3,22 @@
 # https://github.com/rayvalero
 # entrega primer split
 // fuetes:
+
 // http://www.maefloresta.com/portal/es/git.es
+
 // http://rogerdudler.github.io/git-guide/index.es.html
+
 // https://git-scm.com/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos
+
 // http://blog.solucionex.com/git/borrar-ultimo-commit-con-reset-y-revert-en-git
+
 // http://aprendegit.com/como-deshacer-el-ultimo-commit-en-git/
-// todo hecho por consola desde la instalacion en windows 7
+
+// descarge e instale Git-2.7.0-32-bit.exe para windows 7
+
+// https://git-scm.com/download/win
+
+// de aqui en adelante todo se hizo por consola git bash
 
 //Run
 
@@ -167,4 +177,6 @@ Vim: Error reading input, exiting...
 Vim: Finished.
 error: There was a problem with the editor 'vi'.
 Please supply the message using either -m or -F option.
+
+# Contribucion
 
