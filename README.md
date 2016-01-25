@@ -1,5 +1,13 @@
 # BetaVersion
 
+# Teran Valero A. Ray Enmanuel V021182424    
+# entrega primer split
+# fuetes:
+# http://www.maefloresta.com/portal/es/git.es
+# http://rogerdudler.github.io/git-guide/index.es.html
+# https://git-scm.com/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos
+# todo hecho por consola desde la instalacion en windows 7
+
 Run
 
 $ git config --global user.email rayvalero177
@@ -12,6 +20,7 @@ $ cd ray
 
 $ cd ..
 
+#clonar repositorio
 $ git clone https://github.com/ULAnux/mathematica
 
 Cloning into 'mathematica'...
@@ -21,18 +30,20 @@ remote: Total 46 (delta 4), reused 46 (delta 4), pack-reused 0
 Unpacking objects: 100% (46/46), done.
 Checking connectivity... done.
 
-
 $ cd mathematica
 
+#ver direccion
 $ git remote
 
 origin
 
+#ver direccion espesifica
 $ git remote -v
 
 origin  https://github.com/ULAnux/mathematica (fetch)
 origin  https://github.com/ULAnux/mathematica (push)
 
+#clonar mi repositorio de prueba
 $ git clone https://github.com/rayvalero/BetaVersion
 
 Cloning into 'BetaVersion'...
@@ -44,10 +55,13 @@ Checking connectivity... done.
 
 $ cd BetaVersion/
 
+#añadir a index
 $ git add README2.md
 
+#incluimos al head 
 $ git commit -m README2.md
 
+#enviamos al repositorio
 $ git push origin master
 
 Counting objects: 2, done.
