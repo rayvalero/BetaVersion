@@ -32,7 +32,7 @@ $ cd ray
 
 $ cd ..
 
-//clonar repositorio
+#clonar repositorio
 
 $ git clone https://github.com/ULAnux/mathematica
 
@@ -47,20 +47,20 @@ $ git status
 
 $ cd mathematica
 
-//ver direccion
+#ver direccion
 
 $ git remote
 
 origin
 
-//ver direccion espesifica
+#ver direccion espesifica
 
 $ git remote -v
 
 origin  https://github.com/ULAnux/mathematica (fetch)
 origin  https://github.com/ULAnux/mathematica (push)
 
-//clonar mi repositorio de prueba
+#clonar mi repositorio de prueba
 
 $ git clone https://github.com/rayvalero/BetaVersion
 
@@ -73,15 +73,15 @@ Checking connectivity... done.
 
 $ cd BetaVersion/
 
-//añadir a index
+#añadir a index
 
 $ git add README2.md
 
-//incluimos al head 
+#incluimos al head 
 
 $ git commit -m README2.md
 
-//enviamos al repositorio
+#enviamos al repositorio
 
 $ git push origin master
 
@@ -93,7 +93,7 @@ Total 2 (delta 0), reused 0 (delta 0)
 To https://github.com/rayvalero/BetaVersion
 7ebcb51..ba658da  master -> master
 
-// recuperar datos de tus repositorios remotos
+#recuperar datos de tus repositorios remotos
 
 $ git fetch origin
 
@@ -104,7 +104,7 @@ Unpacking objects: 100% (3/3), done.
 From https://github.com/rayvalero/BetaVersion
    ba658da..d684ae7  master     -> origin/master
    
-//Descarga y guarda los cambios realizados desde un repositorio remoto
+#Descarga y guarda los cambios realizados desde un repositorio remoto
 
 $ git pull
 
@@ -119,7 +119,7 @@ Fast-forward
  README.md | 33 +++++++++++++++++++++++++++++++--
  1 file changed, 31 insertions(+), 2 deletions(-)
  
-//muestre mucha más información 
+#muestre mucha más información 
 
 $ git remote show origin
 
@@ -134,14 +134,14 @@ $ git remote show origin
   Local ref configured for 'git push':
     master pushes to master (local out of date)
 
-// Crea una nueva rama llamada "feature_x" y cámbiate a ella usando
+#Crea una nueva rama llamada "feature_x" y cámbiate a ella usando
 
 $ git checkout -b feature_x
 
 D       README1.md
 Switched to a new branch 'feature_x'
 
-//vuelve a la rama principal
+#vuelve a la rama principal
 
 $ git checkout master
 
@@ -149,23 +149,23 @@ D       README1.md
 Switched to branch 'master'
 Your branch is up-to-date with 'origin/master'.
 
-//borra la rama
+#borra la rama
 
 $ git branch -d feature_x
 
 Deleted branch feature_x (was d6e0c31).
 
-// Guarda los cambios desde la rama
+#Guarda los cambios desde la rama
 
 $ git merge
 
 Already up-to-date.
 
-//reemplazar cambios locales usando el comando
+#reemplazar cambios locales usando el comando
 
 $ git checkout -- README1.md
 
-// indicando que retrocedemos a el comit HEAD~1 y perdemos todas las confirmaciones posteriores
+#indicando que retrocedemos a el comit HEAD~1 y perdemos todas las confirmaciones posteriores
 
 $ git reset --hard HEAD~1
 
@@ -183,11 +183,11 @@ $ git reset --hard HEAD~1
 
 HEAD is now at 8326ba6 Initial commit
 
-//indicando que retrocedemos a el commit HEAD~1 y no perdemos los cambios de los commits posteriores
+#indicando que retrocedemos a el commit HEAD~1 y no perdemos los cambios de los commits posteriores
 
 $ git reset --soft HEAD
 
-//En caso de que queramos borrar un commit que ya hemos subido al servidor remoto
+#En caso de que queramos borrar un commit que ya hemos subido al servidor remoto
 
 $ git revert HEAD
 
