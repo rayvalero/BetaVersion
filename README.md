@@ -108,6 +108,13 @@ $ git branch -d feature_x
 
 Deleted branch feature_x (was d6e0c31).
 
+$ git merge
+
+Already up-to-date.
+
+$ git checkout -- README1.md
+
+
 
 
 
