@@ -114,8 +114,27 @@ Already up-to-date.
 
 $ git checkout -- README1.md
 
+$ git reset --hard HEAD~1
 
+HEAD is now at ba658da README2.md
 
+$ git reset --hard HEAD~1
 
+HEAD is now at 88a628a README1.md
 
+$ git reset --hard HEAD~1
 
+HEAD is now at 9c76357 Update README.md
+
+$ git reset --hard HEAD~1
+
+HEAD is now at 8326ba6 Initial commit
+
+$ git reset --soft HEAD
+
+$ git revert HEAD
+
+Vim: Error reading input, exiting...
+Vim: Finished.
+error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
