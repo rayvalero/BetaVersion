@@ -1,4 +1,4 @@
-# BetaVersion
+# BetaVersion 1.4.9
 # Teran Valero A. Ray Enmanuel V021182424    
 # https://github.com/rayvalero
 # entrega primer split
@@ -18,9 +18,9 @@
 
 // https://git-scm.com/download/win
 
-// de aqui en adelante todo se hizo por consola git bash
+// de aqui en adelante todo se hizo por la consila de git bash
 
-//Run
+#Run
 
 $ git config --global user.email rayvalero177
 
