@@ -80,6 +80,35 @@ Fast-forward
  README.md | 33 +++++++++++++++++++++++++++++++--
  1 file changed, 31 insertions(+), 2 deletions(-)
  
+$ git remote show origin
+
+* remote origin
+  Fetch URL: https://github.com/rayvalero/BetaVersion
+  Push  URL: https://github.com/rayvalero/BetaVersion
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local branch configured for 'git pull':
+    master merges with remote master
+  Local ref configured for 'git push':
+    master pushes to master (local out of date)
+
+$ git checkout -b feature_x
+
+D       README1.md
+Switched to a new branch 'feature_x'
+
+$ git checkout master
+
+D       README1.md
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+$ git branch -d feature_x
+
+Deleted branch feature_x (was d6e0c31).
+
+
 
 
 
