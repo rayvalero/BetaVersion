@@ -1,14 +1,16 @@
 # BetaVersion
-
 # Teran Valero A. Ray Enmanuel V021182424    
+# https://github.com/rayvalero
 # entrega primer split
-# fuetes:
-# http://www.maefloresta.com/portal/es/git.es
-# http://rogerdudler.github.io/git-guide/index.es.html
-# https://git-scm.com/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos
-# todo hecho por consola desde la instalacion en windows 7
+// fuetes:
+// http://www.maefloresta.com/portal/es/git.es
+// http://rogerdudler.github.io/git-guide/index.es.html
+// https://git-scm.com/book/es/v1/Fundamentos-de-Git-Trabajando-con-repositorios-remotos
+// http://blog.solucionex.com/git/borrar-ultimo-commit-con-reset-y-revert-en-git
+// http://aprendegit.com/como-deshacer-el-ultimo-commit-en-git/
+// todo hecho por consola desde la instalacion en windows 7
 
-Run
+//Run
 
 $ git config --global user.email rayvalero177
 
@@ -20,7 +22,7 @@ $ cd ray
 
 $ cd ..
 
-#clonar repositorio
+//clonar repositorio
 $ git clone https://github.com/ULAnux/mathematica
 
 Cloning into 'mathematica'...
@@ -30,20 +32,22 @@ remote: Total 46 (delta 4), reused 46 (delta 4), pack-reused 0
 Unpacking objects: 100% (46/46), done.
 Checking connectivity... done.
 
+$ git status
+
 $ cd mathematica
 
-#ver direccion
+//ver direccion
 $ git remote
 
 origin
 
-#ver direccion espesifica
+//ver direccion espesifica
 $ git remote -v
 
 origin  https://github.com/ULAnux/mathematica (fetch)
 origin  https://github.com/ULAnux/mathematica (push)
 
-#clonar mi repositorio de prueba
+//clonar mi repositorio de prueba
 $ git clone https://github.com/rayvalero/BetaVersion
 
 Cloning into 'BetaVersion'...
@@ -55,13 +59,13 @@ Checking connectivity... done.
 
 $ cd BetaVersion/
 
-#añadir a index
+//añadir a index
 $ git add README2.md
 
-#incluimos al head 
+//incluimos al head 
 $ git commit -m README2.md
 
-#enviamos al repositorio
+//enviamos al repositorio
 $ git push origin master
 
 Counting objects: 2, done.
@@ -72,6 +76,7 @@ Total 2 (delta 0), reused 0 (delta 0)
 To https://github.com/rayvalero/BetaVersion
 7ebcb51..ba658da  master -> master
 
+// recuperar datos de tus repositorios remotos
 $ git fetch origin
 
 remote: Counting objects: 3, done.
@@ -80,7 +85,8 @@ remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (3/3), done.
 From https://github.com/rayvalero/BetaVersion
    ba658da..d684ae7  master     -> origin/master
-
+   
+//Descarga y guarda los cambios realizados desde un repositorio remoto
 $ git pull
 
 remote: Counting objects: 3, done.
@@ -94,6 +100,7 @@ Fast-forward
  README.md | 33 +++++++++++++++++++++++++++++++--
  1 file changed, 31 insertions(+), 2 deletions(-)
  
+//muestre mucha más información 
 $ git remote show origin
 
 * remote origin
@@ -107,27 +114,33 @@ $ git remote show origin
   Local ref configured for 'git push':
     master pushes to master (local out of date)
 
+// Crea una nueva rama llamada "feature_x" y cámbiate a ella usando
 $ git checkout -b feature_x
 
 D       README1.md
 Switched to a new branch 'feature_x'
 
+//vuelve a la rama principal
 $ git checkout master
 
 D       README1.md
 Switched to branch 'master'
 Your branch is up-to-date with 'origin/master'.
 
+//borra la rama
 $ git branch -d feature_x
 
 Deleted branch feature_x (was d6e0c31).
 
+// Guarda los cambios desde la rama
 $ git merge
 
 Already up-to-date.
 
+//reemplazar cambios locales usando el comando
 $ git checkout -- README1.md
 
+// indicando que retrocedemos a el comit HEAD~1 y perdemos todas las confirmaciones posteriores
 $ git reset --hard HEAD~1
 
 HEAD is now at ba658da README2.md
@@ -144,11 +157,14 @@ $ git reset --hard HEAD~1
 
 HEAD is now at 8326ba6 Initial commit
 
+//indicando que retrocedemos a el commit HEAD~1 y no perdemos los cambios de los commits posteriores
 $ git reset --soft HEAD
 
+//En caso de que queramos borrar un commit que ya hemos subido al servidor remoto
 $ git revert HEAD
 
 Vim: Error reading input, exiting...
 Vim: Finished.
 error: There was a problem with the editor 'vi'.
 Please supply the message using either -m or -F option.
+
