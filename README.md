@@ -178,5 +178,7 @@ Vim: Finished.
 error: There was a problem with the editor 'vi'.
 Please supply the message using either -m or -F option.
 
-# Contribucion
+# Contribucion:
+
+*mi contribucion personal a este proyecto en conjuntos "Un juego para aprender matemática y lógica", pienso que seria ampliar la base de datos de las preguntas y respuestas correctas del mismo, en la mayoria o preferiblemente en todos lo temas posibles que componen la materia y el juego*
 
